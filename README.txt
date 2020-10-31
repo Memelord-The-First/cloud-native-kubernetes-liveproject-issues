@@ -1,0 +1,4 @@
+Hello. These are the same files on my system, so you can test them out for yourself. Keep in mind that I am using DockerHub. So first, I made the payments image from the payments file using the Dockerfile given. Then, I launched that image as a Container and it immediately exited. This is the error it gave me:
+standard_init_linux.go:211: exec user process caused "no such file or directory"
+
+Now I searched online and I tried changing "bin/sh" in docker-entrypoint.sh to "bin/bash". It didn't work. I also tried changing the encoding from CRLF (Windows) to LF (Linux). It still isn't working. You have any ideas?
